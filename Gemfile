@@ -15,6 +15,14 @@ gem 'puma', '~> 3.11'
 # gem 'redis', '~> 4.0'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
+# gem 'devise_token_auth'
+# gem 'omniauth'
+# gem 'devise'
+# gem 'rack-cors', :require => 'rack/cors'
+gem 'bcrypt', '~> 3.1.7'
+gem 'jwt'
+
+gem 'simple_command'
 
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
@@ -29,6 +37,7 @@ gem 'bootsnap', '>= 1.1.0', require: false
 # gem 'rack-cors'
 
 group :development, :test do
+  gem 'letter_opener'
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
 end
