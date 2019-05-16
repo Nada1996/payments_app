@@ -18,7 +18,6 @@ puts(sales_dep.name)
 months = Date::ABBR_MONTHNAMES
 
 for month in months[1..-1] 
-    puts(month)
     bonus_total = Staff.where(departement_id:sales_dep.id).sum("bonus_percentage * salary/100")
     salaries_total = Staff.where(departement_id:sales_dep.id).sum("salary")
     payments_total = salaries_total + bonus_total
